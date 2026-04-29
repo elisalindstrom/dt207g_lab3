@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Workexperience = require("../models/model_workexp");
+const Workexperience = require("../models/model_workexp"); // Schema + model
 
 // Routes
 router.get("/", async (req, res) => {
