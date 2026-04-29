@@ -5,7 +5,7 @@ const Workexperience = require("../models/model_workexp"); // Schema + model
 // Routes
 router.get("/", async (req, res) => {
     try {
-        let result = await Workexperience.find({});
+        let result = await Workexperience.find().sort({ startdate: -1 });
 
         return res.json(result);
     } catch (error) {
